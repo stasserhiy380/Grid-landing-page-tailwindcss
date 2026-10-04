@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0"
+  />
+  <title>Vite + Tailwind</title>
+</head>
+
+<body class="bg-[#4784FF] text-white lg:flex lg:flex-col lg:h-screen">
+
+<header class="bg-[#4784FF] relative p-6 flex items-center justify-between z-50 md:px-6 md:py-12">
+  <div class="flex items-center gap-2">
+    <div class="w-3.5 h-3.5 bg-white rounded-full"></div>
+    <span class="text-[14px] text-white font-normal">
+      Bridge Collective
+    </span>
+  </div>
+  <img id="menu_open" src="public/icon-menu.svg" alt="menu-open" >
+</header>
+<div id="menu" class="bg-[#4784FF] relative hidden flex-col z-50 justify-between md:fixed md:right-0 md:top-[67px] md:h-[calc(100vh-62px)] md:w-1/2 md:flex-col md:items-end md:px-6 md:pt-6 lg:w-1/3">
+  <a class="block text-center text-[32px] font-medium leading-[160%] tracking-[-2px] md:text-right" href="#">About</a>
+  <a class="block text-center text-[32px] font-medium leading-[160%] tracking-[-2px] md:text-right" href="#">Our Work</a>
+  <a class="block text-center text-[32px] font-medium leading-[160%] tracking-[-2px] md:text-right" href="#">Partners</a>
+  <a class="block text-center text-[32px] font-medium leading-[160%] tracking-[-2px] md:text-right" href="#">Annual Report</a>
+  <a class="block text-center text-[32px] font-medium leading-[160%] tracking-[-2px] md:text-right" href="#">Donate</a>
+</div>
+
+<div id="overlay" class="fixed inset-0 z-40 hidden bg-black/50" >
+</div>
+
+<div class ="lg:flex  lg:flex-row lg:justify-between lg:border-t lg:border-white">
+<article class="py-14 px-8 border-t border-white md:py-35 md:px-12 lg:border-t-0 basis-[45%]">
+  <h1 class="text-white text-[44px] font-medium leading-[106%] tracking-[-2px] md:text-[60px]  md:w-95">A classroom for every child</h1>
+  <p class="my-6 w-70 text-[17px] font-normal leading-[165%] text-[#E4EBFF] md:mt-10 md:w-95">We fund the schools, train the teachers, and measure what works — so every child we reach today becomes a graduate tomorrow.</p>
+</article>
+<main class="flex flex-col md:grid md:grid-cols-2 basis-[55%]">
+  <article class="p-6 h-82 flex flex-col justify-between border-t md:border-r lg:border-l lg:border-t-0 border-white" >
+    <div class="flex justify-between items-center">
+      <img class="w-8 h-8" src="public/icon-sparkle.svg" alt="students-reached">
+      <span class="text-[36px] font-medium leading-[111%]">2.4M</span>
+    </div>
+    <div>
+      <p class="text-[17px] font-medium leading-[165%] text-white">Students reached</p>
+      <p class="text-[14px] font-normal leading-[142%] tracking-[-0.25px]">Across 31 countries since 2011</p>
+    </div>
+  </article>
+  <article class="p-6 h-82 flex flex-col justify-between border-t lg:border-0 border-white">
+    <div class="flex justify-between items-center">
+      <img class="w-8 h-8" src="public/icon-plus.svg" alt="students-reached">
+      <span class="text-[36px] font-medium leading-[111%]">1,284</span>
+    </div>
+    <div>
+      <p class="text-[17px] font-medium leading-[165%] text-white">Schools partnered</p>
+      <p class="text-[14px] font-normal leading-[142%] tracking-[-0.25px]">In 14 countries, from Kenya to Guatemala.</p>
+    </div>
+  </article>
+  <article class="p-6 h-82 flex flex-col justify-between border-t md:border-r border-white lg:border-l ">
+    <div class="flex justify-between items-center">
+      <img class="w-8 h-8" src="public/icon-arrow-right.svg" alt="students-reached">
+      <span class="text-[36px] font-medium leading-[111%]">38K</span>
+    </div>
+    <div>
+      <p class="text-[17px] font-medium leading-[165%] text-white">Teachers trained</p>
+      <p class="text-[14px] font-normal leading-[142%] tracking-[-0.25px]">Equipped with modern tools and methodology.</p>
+    </div>
+  </article>
+  <article class="p-6 h-82 flex flex-col justify-between border-t border-white">
+    <div class="flex justify-between items-center">
+      <img class="w-8 h-8" src="public/icon-trending-up.svg" alt="students-reached">
+      <span class="text-[36px] font-medium leading-[111%]">3.1×</span>
+    </div>
+    <div>
+      <p class="text-[17px] font-medium leading-[165%] text-white">Graduation lift</p>
+      <p class="text-[14px] font-normal leading-[142%] tracking-[-0.25px]">Partner schools outperform national averages 3x.</p>
+    </div>
+  </article>
+</main>
+</div>
+<footer class="p-6 border-t border-white md:flex md:flex-row md:justify-between md:content-center  lg:px-12 lg:h-screen lg:items-center">
+  <p class="text-[14px] font-medium text-white leading-[142%]">© 2026 Bridge Collective</p>
+  <p class="text-[14px] font-medium text-white leading-[142%]">Registered charity 12345678</p>
+</footer>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
